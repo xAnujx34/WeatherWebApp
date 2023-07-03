@@ -37,6 +37,8 @@ function displayResults(weather){
 
     let hilow = document.querySelector(".hi-low");
     hilow.innerText = `${weather.main.temp_min}°C / ${weather.main.temp_max}°C`;
+
+    changeBackgroundImage(weather.weather[0].main);
 }
 
 function dateBuilder(d){
@@ -54,4 +56,46 @@ function dateBuilder(d){
     let year = d.getFullYear();
 
     return `${day} ${date} ${month} ${year}`;
+}
+
+
+// Get a reference to the body element
+const body = document.querySelector('body');
+
+// Function to change the background image based on the weather type
+function changeBackgroundImage(weatherType) {
+  // Remove any existing classes from the body element
+    body.classList.remove("haze","mist","sunny","clear","clouds","drizzle","rain","thunderstorm","snow");
+
+    switch(weatherType){
+        case "Haze":
+            body.classList.add("haze");
+            break;
+        case "Mist":
+            body.classList.add("mist");
+            break;
+        case "Sunny":
+            body.classList.add("sunny");
+            break;
+        case "Clear":
+            body.classList.add("clear");
+            break;
+        case "Clouds":
+            body.classList.add("clouds");
+            break;
+        case "Drizzle":
+            body.classList.add("drizzle");
+            break;
+        case "Rain":
+            body.classList.add("rain");
+            break;
+        case "Thunderstorm":
+            body.classList.add("thunderstorm");
+            break;
+        case "Snow":
+            body.classList.add("snow");
+            break;
+        default:
+
+    }
 }
