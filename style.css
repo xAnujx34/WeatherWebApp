@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;700;900&display=swap');
 
 *{
     margin: 0;
@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Outfit', sans-serif;
-    background-image: url("https://images3.alphacoders.com/109/1091500.jpg");
+    background-image: url("https://t4.ftcdn.net/jpg/04/97/80/99/360_F_497809944_FMo3DO6j7XSlb9rZKOlnqaaWoJhuZXBm.jpg");
     background-size: cover;
     background-position: top-center;
 }
@@ -93,4 +93,40 @@ main{
     font-size: 24px;
     font-weight: 500;
     text-shadow: 0 3px rgba(0,0,0,0.4);
+}
+
+.haze{
+    background-image: url("https://media.tenor.com/bnvs-f9hunUAAAAC/greys-anatomy-foggy.gif");
+}
+
+.mist{
+    background-image: url("https://media.tenor.com/hN8ma5kfmF0AAAAC/fog-mountains.gif");
+}
+
+.sunny{
+    background-image: url("https://media.giphy.com/media/PWE9TqGFHlbctObBjN/giphy.gif");
+}
+
+.clear{
+    background-image: url("https://media.tenor.com/gznLWsJjaMAAAAAC/daytime-miving.gif");
+}
+
+.clouds{
+    background-image: url("https://media.tenor.com/f14xUacYc1oAAAAd/storm-world-meteorological-day.gif");
+}
+
+.drizzle{
+    background-image: url("https://media.tenor.com/AeaXKKx8CgQAAAAC/rain-droplets.gif");
+}
+
+.rain{
+    background-image: url("https://media.tenor.com/8Qm-3YieUhwAAAAC/rainy-day-rain.gif");
+}
+
+.thunderstorm{
+    background-image: url("https://media.tenor.com/oBT_0RmGaSIAAAAC/thunder.gif");
+}
+
+.snow{
+    background-image: url("https://media.tenor.com/fwEQI4qR7aEAAAAM/snowfall-primal-survivor.gif");
 }
