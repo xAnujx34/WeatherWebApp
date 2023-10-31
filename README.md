@@ -1,2 +1,2 @@
 # WeatherWebApp
-not mine
+weather web application
